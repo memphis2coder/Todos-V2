@@ -41,16 +41,34 @@ let todoList = {
     // toggleAll
     toggleAll: function () {
         let total = this.list.length;
-        let completedAll = 0;
+        let completedTotal = 0;
+
+        // get the total amount of completed Todos
         for (let i = 0; i < total; i++) {
-            if (this.list[i].completed === true) {
-                completedAll++
+            this.list[i].completed === true;
+            completedTotal++
+        }
+        // if all items are true then set them to false
+        if (completedTotal === total) {
+            for (let i = 0; i < total; i++) {
+                this.list[i].completed = false
             }
         }
+        // otherwise, set them to true  
+        else {
+            for (let i = 0; i < total; i++) {
+                this.list[i].completed = true
+            }
+        }
+
     }
 
 }
 
+todoList.add('item0');
+todoList.add('item1');
+todoList.toggleAll();
+todoList.toggleAll();
 
 
 
@@ -74,23 +92,27 @@ let todoList = {
 
 
 
+// toggleAll: function () {
+//     let total = this.list.length;
+//     let completedTotal = 0;
 
-
-
-
-
-// let totalTodos = this.list.length;
-//         let completedTodos = 0;
-//         // get number of completed todos
-//         for (let i = 0; i < totalTodos; i++) {
-//             if (this.list[i].completed === true) {
-//                 completedTodos++;
-//             }
+//     // get the total of completed todos
+//     for (let i = 0; i < total; i++) {
+//         if (this.list[i].completed === true) {
+//             completedTotal++
 //         }
-//         // Case 1: if everything is true, make everything false
-//         if (completedTodos === totalTodos) {
-//             for (let i = 0; i < totalTodos; i++) {
-//                 this.list[i].completed = false;
-//             }
+//     }
+//     // Case 1 : if everything is true make it false
+//     if (completedTotal === total) {
+//         for (let i = 0; i < total; i++) {
+//             this.list[i].completed = false;
 //         }
-//         this.display();
+//     }
+//     // Case 2 : otherwise, make everything true
+//     else {
+//         for (let i = 0; i < total; i++) {
+//             this.list[i].completed = true;
+//         }
+//     }
+//     this.display();
+// }
