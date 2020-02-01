@@ -9,8 +9,8 @@ body {
     text-align: center;
 }
 
-h2 {
-    font-size: 10vw;
+h1 {
+    font-size: 5vmax;
     font-weight: 100;
     color: lightslategray;
     margin-bottom: 0;
@@ -19,7 +19,7 @@ h2 {
 
 
 #input {
-    font-size: 1rem;
+    font-size: 1.5vmax;
     width: 70%;
     padding: 1rem;
     margin: 1rem;
