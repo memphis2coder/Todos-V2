@@ -13,11 +13,35 @@
     <div class="todos">
         <div class="container">
             <h1>Todos</h1>
-            <input type="text" id="input" placeholder="Add something new...">
+            <!-- related to display & toggleAll -->
             <div>
-                <button id="displayTodos" onClick=todoList.display()>Display Todos</button>
-                <button id="toggleAll">Toggle All</button>
+                <button onclick="handlers.displayTodosBtn()">Display Todos</button>
+                <button onclick="handlers.toggleAllBtn()">Toggle All</button>
             </div>
+            <!-- related to add a new todo -->
+            <div>
+                <button onclick='handlers.addTodoBtn()' id="add">Add..</button>
+                <input type="text" id="input" placeholder="Add something new...">
+            </div>
+            <!-- delete a item -->
+            <div>
+                <button onclick="handlers.deleteTodoBtn()" id="delete">Delete</button>
+                <input type="number" id="deleteTodoPositionInput">
+            </div>
+            <!-- related to change a input -->
+            <div>
+                <button onclick="handlers.changeTodoBtn()">Change a Item</button>
+                <input type="number" id="changeTodoPositionInput">
+                <input type="text" id="changeTodoTextInput" placeholder="Edit...">
+                <!-- <button onclick="handlers.toggleAll()">toggleAll</button> -->
+            </div>
+            <!-- toggle a input -->
+            <div>
+                <button onclick="handlers.checkTodoBtn()">Check a Item</button>
+                <input type="number" id="toggleTodoInput">
+            </div>
+            <!-- dynamic list -->
+            <ul></ul>
         </div>
     </div>
 

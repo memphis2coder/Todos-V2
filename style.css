@@ -1,12 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f4f4f4;
-    font-family: sans-serif;
+    font-family: -apple-system, sans-serif;
+    padding: 0 1rem;
+}
+
+.todos {
+    padding-top: 2rem;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
 }
 
 h1 {
@@ -16,13 +26,23 @@ h1 {
     margin-bottom: 0;
 }
 
-
-
 #input {
-    font-size: 1.5vmax;
+    font-size: 2.5vmin;
     width: 70%;
-    padding: 1rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: .5rem;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
     color: rgb(126, 126, 126);
+}
+
+#display {
+    padding: 1rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    padding: .5rem;
 }
