@@ -13,9 +13,8 @@
     <div class="todos">
         <div class="container">
             <h1>Todos</h1>
-            <!-- related to display & toggleAll -->
+            <!-- related to toggleAll -->
             <div>
-                <button onclick="handlers.displayTodosBtn()">Display Todos</button>
                 <button onclick="handlers.toggleAllBtn()">Toggle All</button>
             </div>
             <!-- related to add a new todo -->
@@ -37,11 +36,15 @@
             </div>
             <!-- toggle a input -->
             <div>
-                <button onclick="handlers.checkTodoBtn()">Check a Item</button>
+                <button onclick="handlers.checkTodoBtn()">Complete a Item</button>
                 <input type="number" id="toggleTodoInput">
             </div>
             <!-- dynamic list -->
             <ul></ul>
+
+            <div id="demo">
+
+            </div>
         </div>
     </div>
 
